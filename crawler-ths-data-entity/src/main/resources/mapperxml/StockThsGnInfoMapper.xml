@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ths.mapper.StockThsGnInfoMapper">
+  <resultMap id="BaseResultMap" type="com.ths.domain.StockThsGnInfo">
+    <!--@mbg.generated-->
+    <!--@Table stock_ths_gn_info-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="gn_name" jdbcType="VARCHAR" property="gnName" />
+    <result column="gn_code" jdbcType="VARCHAR" property="gnCode" />
+    <result column="stock_code" jdbcType="VARCHAR" property="stockCode" />
+    <result column="stock_name" jdbcType="VARCHAR" property="stockName" />
+    <result column="stock_price" jdbcType="DECIMAL" property="stockPrice" />
+    <result column="stock_change" jdbcType="DECIMAL" property="stockChange" />
+    <result column="stock_change_price" jdbcType="DECIMAL" property="stockChangePrice" />
+    <result column="stock_change_speed" jdbcType="DECIMAL" property="stockChangeSpeed" />
+    <result column="stock_handover_scale" jdbcType="DECIMAL" property="stockHandoverScale" />
+    <result column="stock_liang_bi" jdbcType="DECIMAL" property="stockLiangBi" />
+    <result column="stock_amplitude" jdbcType="DECIMAL" property="stockAmplitude" />
+    <result column="stock_deal_amount" jdbcType="DECIMAL" property="stockDealAmount" />
+    <result column="stock_flow_stock_number" jdbcType="DECIMAL" property="stockFlowStockNumber" />
+    <result column="stock_flow_makert_value" jdbcType="DECIMAL" property="stockFlowMakertValue" />
+    <result column="stock_market_ttm" jdbcType="DECIMAL" property="stockMarketTtm" />
+    <result column="crawler_time" jdbcType="VARCHAR" property="crawlerTime" />
+    <result column="crawler_version" jdbcType="VARCHAR" property="crawlerVersion" />
+    <result column="some_ext" jdbcType="LONGVARCHAR" property="someExt" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, gn_name, gn_code, stock_code, stock_name, stock_price, stock_change, stock_change_price, 
+    stock_change_speed, stock_handover_scale, stock_liang_bi, stock_amplitude, stock_deal_amount, 
+    stock_flow_stock_number, stock_flow_makert_value, stock_market_ttm, crawler_time, 
+    crawler_version, some_ext, create_time, update_time
+  </sql>
+</mapper>
